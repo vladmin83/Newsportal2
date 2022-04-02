@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load custom_filters %}
+
+{% block title %} детализация поста {% endblock title %}
+
+<p>{% block content %}</p>
+{{ new.title }} /{{ new.date }}/ {{ new.newCategory }}
+
+</br>
+</br>
+{{ new.text }}
+{% endblock content %}
